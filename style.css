@@ -1,0 +1,245 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.box-container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.box-shift {
+  margin-top: 125px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .box-container {
+    width: auto;
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-container {
+    padding: 0 25px;
+  }
+}
+
+.section {
+  margin: 100px 0;
+}
+
+.banner {
+  font-size: 16px;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.banner__title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.banner__subtitle {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.banner__form {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner__email {
+  min-width: 250px;
+  padding: 9px 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #2d2e35;
+  color: #edf0f1;
+  border: 1px solid #edf0f15e;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease 0s;
+}
+
+.banner__email:hover {
+  background-color: #32333a;
+}
+
+.banner__iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner__iframe {
+    width: 373px;
+    height: 210px;
+  }
+}
+
+.brand {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.brand__logo {
+  width: auto;
+  max-height: 30px;
+  padding-right: 5px;
+}
+
+.brand__btn {
+  margin-left: 20px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-link a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link a:hover {
+  color: rgba(246, 212, 63, 1);
+}
+
+.btn {
+  color: #24252a;
+  font-size: 16px;
+  padding: 9px 25px;
+  background-color: rgba(246, 212, 63, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  background-color: rgba(246, 212, 63, 1);
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+#header {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  z-index: 9999;
+  width: 90%;
+  background-color: #24252a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.usp__card {
+  margin: 10px;
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1 1 200px;
+  background-color: #2d2e35;
+}
+
+.usp__icon {
+  font-size: 4rem;
+}
+
+.usp__card-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.price-card {
+  margin: 10px;
+  text-align: center;
+  padding: 0;
+  flex: 1 1 250px;
+  background-color: #2d2e35;
+}
+
+.price-card__title {
+  margin: 0;
+  padding: 15px 0;
+  background-color: #3c3d44;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.price-card__info {
+  padding: 15px 20px 50px 20px;
+}
+
+.price-card__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.price-card__features {
+  font-weight: 300;
+}
+
+.price-card__btn {
+  margin-top: 15px;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #2d2e35;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: flex-end;
+}
